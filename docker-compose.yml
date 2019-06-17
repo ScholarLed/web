@@ -1,0 +1,17 @@
+version: "3.5"
+
+services:
+  web:
+    image: openbookpublishers/scholarled_web
+    restart: always
+    container_name: "scholarled-web"
+    networks:
+      local:
+        ipv4_address: 172.31.0.2
+
+networks:
+  local:
+    driver: bridge
+    ipam:
+      config:
+      - subnet: 172.31.0.0/30

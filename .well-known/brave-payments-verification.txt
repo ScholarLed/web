@@ -1,0 +1,4 @@
+This is a Brave Payments publisher verification file.
+
+Domain: scholarled.org
+Token: 6f214ac635cc6390b04c2b18d33ff6d47889aa1f7aa1442aa359305411d6c0ac 
