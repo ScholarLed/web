@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head lang="en">
+    <meta charset="UTF-8">
+
+    <!--Page Title-->
+    <title>ScholarLed Constitution</title>
+
+    <!--Meta Keywords and Description-->
+    <meta name="keywords" content="openaccess,OA,ScholarLed,Non-profit,scholar-led,academic-led,open,infrastructure,open-source">
+    <meta name="description" content="ScholarLed is a consortium of five scholar-led, not-for-profit, open access book publishers that was formed in 2018. We are seeking to develop powerful, practical ways for small-scale, scholar-led Open Access presses to grow and flourish in a publishing landscape that is changing rapidly. We want to make sure that change is for the better.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <meta name="web_author" content="Javier Arias, javi@openbookpublishers.com">
+    <meta name="google-site-verification" content="t89whJD-hom3oldPAt8x9U7vQOQSAqFQpAtU9QzKqFI" />
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="images/favicon.ico?v=1" title="Favicon"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png?v=2">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png?v=2">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png?v=2">
+    <link rel="manifest" href="/site.webmanifest?v=2">
+    <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg?v=2" color="#22b24c">
+    <meta name="apple-mobile-web-app-title" content="ScholarLed">
+    <meta name="application-name" content="ScholarLed">
+    <meta name="msapplication-config" content="/browserconfig.xml?v=2">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Main CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Namari Color CSS -->
+    <link rel="stylesheet" href="css/namari-color.css">
+
+    <!--Icon Fonts - Font Awesome Icons-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- Animate CSS-->
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+
+    <!--Google Webfonts-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- json ld information -->
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "name": "ScholarLed",
+            "alternateName": "ScholarLed Open Access Presses",
+            "description": "ScholarLed is a consortium of five scholar-led, not-for-profit, open access book publishers that was formed in 2018. We are seeking to develop powerful, practical ways for small-scale, scholar-led Open Access presses to grow and flourish in a publishing landscape that is changing rapidly. We want to make sure that change is for the better.",
+            "url": "https://scholarled.org",
+            "logo": "https://scholarled.org/images/logo.png",
+            "email": "info@scholarled.org",
+            "foundingDate": "2018-06-01",
+            "sameAs": [
+                "https://blog.scholarled.org",
+                "https://twitter.com/scholarled",
+                "https://www.facebook.com/ScholarLed",
+                "https://blog.scholarled.org"
+            ]
+        }
+    </script>
+
+    <style>
+        br {
+            display: block;
+            margin: 0.25em 0;
+        }
+        ol.article-list {
+            counter-reset: item
+        }
+        ol.article-list ol:not(.article-sublist)  {
+            counter-reset: item
+        }
+        .article-list li:not(ol.article-sublist li):not(ul.article-sublist li) {
+            display: block;
+            margin-bottom: 0.5em;
+        }
+        .article-list li:not(ol.article-sublist li):not(ul.article-sublist li):before {
+            content: counters(item, ".") ". ";
+            counter-increment: item;
+        }
+        .article-list > li:not(ol.article-sublist li):not(ul.article-sublist li):first-child:before {
+            counter-increment: item;
+            content: "";
+        }
+        ol.article-sublist,
+        ul.article-sublist {
+            list-style-position: inside;
+        }
+        ol.article-sublist li {
+            margin-left: 2em;
+        }
+        #article2 + ol {
+            counter-increment: item+1;
+        }
+        #article3 + ol {
+            counter-increment: item+2;
+        }
+        #article4 + ol {
+            counter-increment: item+3;
+        }
+        #article5 + ol {
+            counter-increment: item+4;
+        }
+        #article6 + ol {
+            counter-increment: item+5;
+        }
+        #article7 + ol {
+            counter-increment: item+6;
+        }
+        #article8 + ol {
+            counter-increment: item+7;
+        }
+        #article9 + ol {
+            counter-increment: item+8;
+        }
+        #article10 + ol {
+            counter-increment: item+9;
+        }
+        #article11 + ol {
+            counter-increment: item+10;
+        }
+        #article12 + ol {
+            counter-increment: item+11;
+        }
+        #article13 + ol {
+            counter-increment: item+12;
+        }
+        #article14 + ol {
+            counter-increment: item+13;
+        }
+        #article15 + ol {
+            counter-increment: item+14;
+        }
+        #article16 + ol {
+            counter-increment: item+15;
+        }
+        #article17 + ol {
+            counter-increment: item+16;
+        }
+        #article18 + ol {
+            counter-increment: item+17;
+        }
+        #article19 + ol {
+            counter-increment: item+18;
+        }
+        #article20 + ol {
+            counter-increment: item+19;
+        }
+        #article21 + ol {
+            counter-increment: item+20;
+        }
+        #article22 + ol {
+            counter-increment: item+21;
+        }
+        #article23 + ol {
+            counter-increment: item+22;
+        }
+        #article24 + ol {
+            counter-increment: item+23;
+        }
+    </style>
+
+    <!-- Matomo -->
+    <script type="text/javascript">
+        var _paq = _paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+            var u="//analytics.openbookpublishers.com/";
+            _paq.push(['setTrackerUrl', u+'piwik.php']);
+            _paq.push(['setSiteId', '2']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+        })();
+    </script>
+    <!-- End Matomo Code -->
+</head>
+<body>
+
+<!-- Preloader -->
+<div id="preloader">
+    <div id="status" class="la-ball-triangle-path">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+<!--End of Preloader-->
+
+<div class="page-border" data-wow-duration="0.7s" data-wow-delay="0.2s">
+    <div class="top-border wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;"></div>
+    <div class="right-border wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;"></div>
+    <div class="bottom-border wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"></div>
+    <div class="left-border wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;"></div>
+</div>
+
+<div id="wrapper">
+
+    <header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
+        <div id="header" class="nav-collapse">
+            <div class="row clearfix">
+                <div class="col-1">
+
+                    <!--Logo-->
+                    <div id="logo">
+
+                        <!--Logo that is shown on the banner-->
+                        <img src="images/logo.png" id="banner-logo" alt="Landing Page"/>
+                        <!--End of Banner Logo-->
+
+                        <!--The Logo that is shown on the sticky Navigation Bar-->
+                        <img src="images/logo-2.png" id="navigation-logo" alt="Landing Page"/>
+                        <!--End of Navigation Logo-->
+
+                    </div>
+                    <!--End of Logo-->
+
+                    <aside>
+
+                        <!--Social Icons in Header-->
+                        <ul class="social-icons">
+                            <li>
+                                <a target="_blank" title="Email" href="mailto:info@scholarled.org">
+                                    <i class="fa fa-envelope fa-1x"></i><span>Email</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" title="Facebook" href="https://www.facebook.com/ScholarLed/">
+                                    <i class="fa fa-facebook fa-1x"></i><span>Facebook</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" title="Twitter" href="http://www.twitter.com/scholarled">
+                                    <i class="fa fa-twitter fa-1x"></i><span>Twitter</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!--End of Social Icons in Header-->
+
+                    </aside>
+
+                    <!--Main Navigation-->
+                    <nav id="nav-main">
+                        <ul>
+                            <li>
+                                <a href="/#banner">Home</a>
+                            </li>
+                            <li>
+                                <a href="/#about">About Us</a>
+                            </li>
+                            <li>
+                                <a href="/#infrastructure">Open Infrastructure</a>
+                            </li>
+                            <li>
+                                <a href="/constitution.html">Constitution</a>
+                            </li>
+                            <li>
+                                <a href="https://www.oapen.org/topic/15632108-scholarled">Our Books</a>
+                            </li>
+                            <li>
+                                <a href="/#more">More</a>
+                            </li>
+                            <li>
+                                <a href="https://blog.scholarled.org">Blog</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!--End of Main Navigation-->
+
+                    <div id="nav-trigger"><span></span></div>
+                    <nav id="nav-mobile"></nav>
+
+                </div>
+            </div>
+        </div><!--End of Header-->
+
+    </header>
+
+    <!--Main Content Area-->
+    <main id="content">
+
+        <!--Constitution-->
+        <section id="Constitution" class="scrollto clearfix" style="margin-top: 20px;">
+            <div class="row clearfix">
+
+                <div class="col-1">
+                    <div class="section-heading">
+                        <h3>Bylaws</h3>
+                        <h2 class="section-title">ScholarLed Constitution</h2>
+
+                        <p>
+                            ScholarLed is a non-profit Foundation under Dutch law (Stichting) registered in The Hague,
+                            Netherlands. The Foundation uses ScholarLed as its trading name.
+                        </p>
+                        <p>
+                            The Articles of Association below were set in 2020, and formally state the business of the
+                            organisation, together with the responsibilities of the board and participants.
+                        </p>
+                        <ul>
+                            <li>
+                                <a href="#article1">Article 1. Name and registered office</a>
+                            </li>
+                            <li>
+                                <a href="#article2">Article 2. Object and means</a>
+                            </li>
+                            <li>
+                                <a href="#article3">Article 3. Capital</a>
+                            </li>
+                            <li>
+                                <a href="#article4">Article 4. Board: composition, appointment and end of office</a>
+                            </li>
+                            <li>
+                                <a href="#article5">Article 5. Board: duties and powers</a>
+                            </li>
+                            <li>
+                                <a href="#article6">Article 6. Board: convening meetings</a>
+                            </li>
+                            <li>
+                                <a href="#article7">Article 7. Board: right to attend meetings</a>
+                            </li>
+                            <li>
+                                <a href="#article8">Article 8. Board: presiding of meetings</a>
+                            </li>
+                            <li>
+                                <a href="#article9">Article 9. Board: decision-making in meetings</a>
+                            </li>
+                            <li>
+                                <a href="#article10">Article 10. Board: decision-making outside of the meeting</a>
+                            </li>
+                            <li>
+                                <a href="#article11">Article 11. Board: conflicts of interest</a>
+                            </li>
+                            <li>
+                                <a href="#article12">Article 12. Board: minutes of the meetings</a>
+                            </li>
+                            <li>
+                                <a href="#article13">Article 13. Board: representation</a>
+                            </li>
+                            <li>
+                                <a href="#article14">Article 14. Executive director</a>
+                            </li>
+                            <li>
+                                <a href="#article15">Article 15. Participants</a>
+                            </li>
+                            <li>
+                                <a href="#article16">Article 16. Council of participants</a>
+                            </li>
+                            <li>
+                                <a href="#article17">Article 17. Council of participants: organisation</a>
+                            </li>
+                            <li>
+                                <a href="#article18">Article 18. Council of participants: decision-making</a>
+                            </li>
+                            <li>
+                                <a href="#article19">Article 19. Working groups and committees</a>
+                            </li>
+                            <li>
+                                <a href="#article20">Article 20. Financial year and accounts</a>
+                            </li>
+                            <li>
+                                <a href="#article21">Article 21. Standing orders</a>
+                            </li>
+                            <li>
+                                <a href="#article22">Article 22. Amendments of the articles of association</a>
+                            </li>
+                            <li>
+                                <a href="#article23">Article 23. Dissolution and liquidation</a>
+                            </li>
+                            <li>
+                                <a href="#article24">Article 24. Final provision</a>
+                            </li>
+                            <li>
+                                <a href="#final-declaration">Final declaration</a>
+                            </li>
+                        </ul>
+                        <h2></h2>
+                    </div>
+
+                    <!-- Article 1 -->
+                    <div class="section-subsection">
+                        <h3 id="article1">
+                            <a href="#article1" class="hash">#</a>
+                            Article 1. Name and registered office
+                        </h3>
+                        <ol class="article-list">
+                            <li>
+                                <ol>
+                                    <li>The foundation bears the name: <b>Stichting ScholarLed</b>.</li>
+                                    <li>It has its registered office in the municipality of The Hague.</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <!-- Article 2 -->
+                    <div class="section-subsection">
+                        <h3 id="article2">
+                            <a href="#article2" class="hash">#</a>
+                            Article 2. Object and means
+                        </h3>
+                        <ol class="article-list">
+                            <li>
+                                <ol>
+                                    <li>The object of the foundation is to facilitate, support, and represent scholar-led, fully Open-
+                                        Access (OA) book publishers in all scholarly disciplines.</li>
+                                    <li>
+                                        This objective will be pursued by, inter alia:
+                                        <ol type="a" class="article-sublist">
+                                            <li>inventing and implementing powerful, practical ways for scholar-led Open Access presses to grow and flourish in a rapidly changing publishing landscape;</li>
+                                            <li>developing and experimenting with knowledges, infrastructures, practices, and forms of governance that allow presses to provide each other with mutual support;</li>
+                                            <li>opening up scholarly research to diverse authorships and readerships;</li>
+                                            <li>resisting the monopolisation of academic knowledge and Open Access content production and distribution;</li>
+                                            <li>working collaboratively and openly, rather than in competition, while being accommodating and respectful of our differences;</li>
+                                            <li>promoting and showcasing the output and activities of its participants.</li>
+
+                                        </ol>
+                                    </li>
+                                    <li>The foundation does not intend to make a profit with the totality of its activities that are aimed at realising or promoting its object.</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <!-- Article 3 -->
+                    <div class="section-subsection">
+                        <h3 id="article3">
+                            <a href="#article3" class="hash">#</a>
+                            Article 3. Capital
+                        </h3>
+                        <ol class="article-list">
+                            <li>
+                                <ol>
+                                    <li>
+                                        The capital of the foundation shall be formed by:
+                                        <ol type="a" class="article-sublist">
+                                            <li>income from the foundation’s activities;</li>
+                                            <li>contributions from participants;</li>
+                                            <li>subsidies and endowments;</li>
+                                            <li>that which is acquired through testamentary dispositions and specific legacies; testamentary dispositions can only be accepted under the benefit of inventory;</li>
+                                            <li>grants and donations</li>
+                                            <li>other incomes.</li>
+                                        </ol>
+                                    </li>
+                                    <li>The capital of the foundation serves to realise its object.</li>
+                                    <li>The foundation shall not hold more capital than is reasonably required for the continuity of the work foreseen for the benefit of its objective.</li>
+                                    <li>
+                                        Capital required for the continuity of foreseen work as meant in article 3.3 is taken to mean:
+                                        <ol type="a" class="article-sublist">
+                                            <li>capital or capital components which have been acquired by the foundation pursuant to testamentary dispositions or endowments, and which, on the basis of conditions attached to said testamentary disposition or endowment, must be maintained, in real terms or otherwise;</li>
+                                            <li>capital components to the extent such maintenance follows from the foundation’s objective, and</li>
+                                            <li>to maintain assets and capital components for the foreseen purchase of assets, insofar as the foundation reasonably requires such assets for its object.</li>
+                                        </ol>
+                                    </li>
+                                    <li>The foundation may perform work or provide services at commercial rates with the objective of making a profit for purposes of financing activities that are aimed at promoting or realising its object.</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <!-- Article 4 -->
+                    <div class="section-subsection">
+                        <h3 id="article4">
+                            <a href="#article4" class="hash">#</a>
+                            Article 4. Board: composition, appointment and end of office
+                        </h3>
+                        <ol class="article-list">
+                            <li>
+                                <ol>
+                                    <li>The foundation shall have a board comprising a number of natural persons to be determined by the board. An incomplete board retains its powers. Any vacancies that arise will be provided for as soon as possible.</li>
+                                    <li>Board members are appointed by the council of participants.The board has the right to submit a binding nomination for the appointment of each boardmember. The binding nature may be removed from any nomination by a decision taken by thecouncil of participants carried by at least two thirds of the votes in a meeting in which at leasttwo thirds of the participants of the are present or represented. Removing the binding nature ofthe nomination can only occur within four months after it has been made known to theparticipants. If the binding nature of the nomination of one person is not removed within theaforementioned period of four months, the nominated candidate is appointed. If the board doesnot submit a binding nomination within nine months after the vacancy arises or the submittednomination is deprived of its binding force by a decision as referred to in this paragraph withinthe specified time, the council of participants may appoint at its discretion.</li>
+                                    <li>The board will appoint a chairperson, secretary and treasurer from among its members. The chairperson, the secretary and treasurer are eligible for immediate reappointment at the end of the one year term for which they are appointed. The president, the secretary and the treasurer of the board jointly form the foundation’s executive committee.</li>
+                                    <li>Board members are appointed for a maximum duration of three years and resign accordingto a schedule of resignation as adopted by the board; a board member who resigns inaccordance with the schedule is eligible for immediate re-election, consecutively or otherwise,without limitation. A person appointed to an interim vacancy will take the place on the scheduleof resignation of the person in whose vacancy he or she was appointed.</li>
+                                    <li>A board member leaves office:
+                                        <ol type="a" class="article-sublist">
+                                            <li>upon their death;</li>
+                                            <li>by being placed under administration or otherwise losing the power to freely dispose of their assets;</li>
+                                            <li>by their voluntary resignation according to the schedule mentioned in article 4.4 or otherwise;</li>
+                                            <li>by their dismissal, granted by the court in such cases as provided for by law;</li>
+                                            <li>by their dismissal, granted by the council of participants carried by at least two thirds of the votes in a meeting in which at least two thirds of the participants of the are present or represented.</li>
+                                        </ol>
+                                    </li>
+                                    <li>If one or more board members are absent or unable to act, the remaining board members orthe only remaining board member will temporarily be charged with the management of thefoundation. If all the board members are, or the only board member is, absent or unable to act,the natural person who has been or will be designated for that purpose by the council ofparticipants will temporarily be charged with the management of the foundation. The provisionsof the Constitution with respect to the board and the board member/s apply to him or her byanalogy. Such person must also convene a meeting of the council of participants as soon aspossible, at which a resolution may be passed on the appointment of one or more boardmembers.</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <!-- Article 5 -->
+                    <div class="section-subsection">
+                        <h3 id="article5">
+                            <a href="#article5" class="hash">#</a>
+                            Article 5. Board: duties and powers
+                        </h3>
+                        <ol class="article-list">
+                            <li>
+                                <ol>
+                                    <li>
+                                        The board is charged with the management of the foundation. Its duties include the annual adoption of a budget and a current policy plan that provides insight into the work to be carried out by the foundation for the realisation of its object, the manner in which income is to be raised, the management of the capital of the foundation and the deployment thereof.
+                                        <br>
+                                        <br>
+                                        The board shall ensure that the administration expenses of the foundation shall be in reasonable proportion to the expenditure for the purposes of its mission.
+                                    </li>
+                                    <li>The board is not authorised to resolve to enter into agreements for the purchase, alienation or encumbrance of registered properties or agreements in which the foundation commits itself as surety or guarantor or a joint and several debtor, stands surety for a third party or commits to provide security for a third party’s debt.</li>
+                                    <li>
+                                        Board members shall receive no remuneration, neither direct nor indirect, for the work they perform for the foundation in that capacity.
+                                        <br>
+                                        <br>
+                                        Remuneration is not taken to include:
+                                        <ol type="a" class="article-sublist">
+                                            <li>a reasonable, non-excessive compensation for costs incurred for the benefit of the foundation;</li>
+                                            <li>an appropriate attendance fee.</li>
+                                        </ol>
+                                    </li>
+                                    <li>Board members cannot dispose of the capital of the foundation as if it were their own capital.</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <!-- Article 6 -->
+                    <div class="section-subsection">
+                        <h3 id="article6">
+                            <a href="#article6" class="hash">#</a>
+                            Article 6. Board: convening meetings
+                        </h3>
+                        <ol class="article-list">
+                            <li>
+                                <ol>
+                                    <li>Board meetings are held whenever the chairperson or at least two of the other board members call a meeting, but at least twice a year.</li>
+                                    <li>
+                                        The meetings of the board are convened in writing by the person or persons referred to in article 6.1, or on their behalf by the secretary at least seven days in advance and specifying the business to be dealt with.
+                                        <br>
+                                        <br>
+                                        If a board member agrees, he or she can be called to the meeting by a reproducible message transmitted electronically to an address that he or she has specified for this.
+                                    </li>
+                                    <li>The meetings of the board shall be held at a location to be determined by the person(s) convening the meeting or on whose behalf the meeting is convened or by means of tele- or videoconference.</li>
+                                    <li>In the event the provisions specified in article 6.2 and/or article 6.3 have not been followed,the board may nonetheless take valid decisions if all board members are represented at themeeting and none of the board members then opposes the decision making, or – if the meetingis not attended by the full board – the board members not attending the meeting have prior tothe meeting declared in writing that they do not oppose the decision-making. In the latter case,the provisions of the first sentence of article 9.4, apply without prejudice. The requirement thatthe statement be made in writing is satisfied if the statement is recorded electronically.</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <!-- Article 7 -->
+                    <div class="section-subsection">
+                        <h3 id="article7">
+                            <a href="#article7" class="hash">#</a>
+                            Article 7. Board: right to attend meetings
+                        </h3>
+                        <ol class="article-list">
+                            <li>
+                                <ol>
+                                    <li>Board meetings may be attended by the board members and those persons invited by any board member.</li>
+                                    <li>A board member may have him or herself represented at the meeting by a fellow board member. A written authorisation must be given for this. The requirement that this authorisation be made in writing is satisfied if the statement is recorded electronically. The authorisation to represent does not have privative effect. A board member can only represent one other fellow board member at the meeting.</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <!-- Article 8 -->
+                    <div class="section-subsection">
+                        <h3 id="article8">
+                            <a href="#article8" class="hash">#</a>
+                            Article 8. Board: presiding of meetings
+                        </h3>
+                        <ol class="article-list">
+                            <li>
+                                <ol>
+                                    <li>The chairperson shall chair the meetings of the board. In the absence of the president, the meeting will provide for its own chair. Until that time the chairpersonhood of the meeting will be observed by the board member attending the meeting longest in office.</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <!-- Article 9 -->
+                    <div class="section-subsection">
+                        <h3 id="article9">
+                            <a href="#article9" class="hash">#</a>
+                            Article 9. Board: decision-making in meetings
+                        </h3>
+                        <ol class="article-list">
+                            <li>
+                                <ol>
+                                    <li>The chairperson of the meeting shall determine the manner in which votes are conducted in the meeting, on the understanding that at the request of a board member votes on persons shall be conducted in writing.</li>
+                                    <li>Insofar as these articles of association do not stipulate a larger majority, all decisions of the board are taken by an absolute majority of votes cast.</li>
+                                    <li>Every board member is entitled to cast one vote. Blank votes shall be considered as not having been cast. In the event of a hung vote, the motion is considered rejected. In the event ofa hung vote in the election of persons, the decision shall be taken by drawing lots. If in an election among more than two persons no candidate achieves an absolute majority, a new vote shall be held between the two persons who achieved the largest number of votes, if necessary following an intermediate vote.</li>
+                                    <li>Unless these articles of association provide otherwise, the board can only take valid decisions in a meeting in which at least half of the board members are present or represented. If in a meeting less than half of the board members are present or represented, a second meeting is called, to be held no sooner than two and no later than four weeks after the first meeting, in which second meeting, regardless of the number of attending or represented board members,valid decisions can be taken on the items placed on the agenda in the first meeting, which could not be decided on in said meeting because of the absence of quorum. The convocation to the second meeting must state that and why a decision can be taken independently of the number of board members attending or represented at the meeting.</li>
+                                    <li>The judgment given by the chairperson of the meeting on the outcome of a vote is decisive.The same applies to the contents of any resolution taken, to the extent that the vote did not concern a motion put in writing. If, immediately after the chairperson pronounces their judgment on the vote, the correctness of said judgment is disputed, a new vote shall be held, if the majority of the meeting, or, if the original vote was not held by roll call or in writing, if a personpresent and eligible to vote de</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <!-- Article 10 -->
+                    <div class="section-subsection">
+                        <h3 id="article10">
+                            <a href="#article1" class="hash">#</a>
+                            Article 10. Board: decision-making outside of the meeting
+                        </h3>
+                        <ol class="article-list">
+                            <li>
+                                <ol>
+                                    <li>All resolutions of the board may also be taken outside of the meeting, provided all board members are given the opportunity to cast their vote and they have all declared in writing not to oppose such manner of decision-making. A resolution is taken as soon as the required majority of all board members have declared to be in favour of the proposal in writing. In writing is also understood to include a message sent and reproducible by electronic means. The secretary ofthe board shall draw up a report of resolutions taken outside of the meeting, which will be adopted in the next following meeting and in evidence thereof will be signed by the chairperson and the minute taker of said meeting. The report thus adopted shall be attached to the minutes of the meeting of the board, together with the documents as referred to in the first sentence of this article.</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <!-- Article 11 -->
+                    <div class="section-subsection">
+                        <h3 id="article11">
+                            <a href="#article11" class="hash">#</a>
+                            Article 11. Board: conflicts of interest
+                        </h3>
+                        <ol class="article-list">
+                            <li>
+                                <ol>
+                                    <li>A board member shall not participate in the deliberations and will refrain from voting on a board resolution if they have a direct or indirect personal interest with respect to the subject of the resolution that conflicts with the interest of the foundation. The board member is entitled to attend the meeting of the board concerned, on the understanding that he or she shall not be counted when determining the number of board members present or represented with respect to the board resolution concerned.</li>
+                                    <li>If on the basis of the provisions of the first sentence of article 11.1 no board member at all can participate in the decision-making, the/those person(s) who do(es) have a personal interestshall participate in the deliberations and vote after all. In such case an extract of the minutes referred to in article 12 or the report as referred to in article 10, giving notice of the personal interest, shall be attached to the statement of assets and liabilities for the financial year in which the resolution was taken.</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <!-- Article 12 -->
+                    <div class="section-subsection">
+                        <h3 id="article12">
+                            <a href="#article12" class="hash">#</a>
+                            Article 12. Board: minutes of the meetings
+                        </h3>
+                        <ol class="article-list">
+                            <li>
+                                <ol>
+                                    <li>
+                                        Minutes shall be kept of the business discussed in the meetings of the board by the secretary or by the person indicated by the chairperson of the meeting. The minutes shall be adopted in the same or in the next following meeting, in evidence of which they shall be signed by the chairperson and the minute taker of said meeting. The minutes and the documents referred to in article 10 shall be kept in a location where they are accessible to all board members for perusal.
+                                        <br>
+                                        <br>
+                                        Every board member shall be provided with a copy or extract of these documents on request, against at most the cost price.
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <!-- Article 13 -->
+                    <div class="section-subsection">
+                        <h3 id="article13">
+                            <a href="#article13" class="hash">#</a>
+                            Article 13. Board: representation
+                        </h3>
+                        <ol class="article-list">
+                            <li>
+                                <ol>
+                                    <li>The board represents the foundation.</li>
+                                    <li>Representative power is also bestowed on two members of the executive committee acting jointly.</li>
+                                    <li>The board may decide to grant a power of attorney to one or more board members, or to third parties, to represent the foundation within the boundaries of said power of attorney.</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <!-- Article 14 -->
+                    <div class="section-subsection">
+                        <h3 id="article14">
+                            <a href="#article14" class="hash">#</a>
+                            Article 14. Executive director
+                        </h3>
+                        <ol class="article-list">
+                            <li>
+                                <ol>
+                                    <li>
+                                        The board may appoint an executive director. If a director is appointed, their duties shall include:
+                                        <ul class="article-sublist">
+                                            <li>preparing the policy plan and budget to be annually drawn up by the board;</li>
+                                            <li>implementing the policy plan and board resolutions.</li>
+                                        </ul>
+                                    </li>
+                                    <li>The board shall determine the other tasks, responsibilities and terms of employment of the director.</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <!-- Article 15 -->
+                    <div class="section-subsection">
+                        <h3 id="article15">
+                            <a href="#article15" class="hash">#</a>
+                            Article 15. Participants
+                        </h3>
+                        <ol class="article-list">
+                            <li>
+                                <ol>
+                                    <li>The foundation has participants, united in the council of participants as referred to in article 16.</li>
+                                    <li>
+                                        Participants of the foundation can only be a natural or legal person, that:
+                                        <ul class="article-sublist">
+                                            <li>subscribes to the foundation’s mission and can provide a substantial contribution to its achievement;</li>
+                                            <li>has entered into a participation agreement with the foundation;</li>
+                                            <li>pays the contribution to the foundation as referred to in article 3.</li>
+                                        </ul>
+                                        - A participant is admitted as such by the board.
+                                    </li>
+                                    <li>
+                                        A participant ceases to be a participant:
+                                        <ol type="a" class="article-sublist">
+                                            <li>upon their death or because it ceases to exist;</li>
+                                            <li>by no longer satisfying the requirements for being a participant as stipulated in article 15.2;</li>
+                                            <li>by the participant being declared bankrupt, petitioning for court protection from creditors or requesting debt restructuring in the meaning of the Dutch Bankruptcy Act;</li>
+                                            <li>by the participant being placed under administration or otherwise losing the power to freely dispose of their assets;</li>
+                                            <li>by cancellation by the participant;</li>
+                                            <li>by cancellation by the board.</li>
+                                        </ol>
+                                    </li>
+                                    <li>Cancellation as referred to in (e) and (f) can only take place effective from the end of the financial year, observing a two-month term of notice. However, a participant or the board can issue immediate cancelation as referred to in (e) and (f) if it cannot reasonably be demanded of the participant or the board that the participant continues to remain a participant of the foundation. A participant can additionally also immediately cancel the participantship as referred to in (e) within one month after a resolution has been taken in which the monetary duties of the participants have been increased has become known or communicated; the resolution shall as of then no longer apply to the participant. A resolution as meant in (f) can only be taken by a majority of at least two thirds of votes cast in a meeting in which at least two thirds of all board members are in attendance or represented.</li>
+                                    <li>Every participant has the duty vis-à-vis the foundation to pay a contribution fee, the amount of which is annually determined by the board. In connection with the payment of this fee the board may divide the participants into various categories and set different fees for different categories.</li>
+                                    <li>If a participant ceases to be a participant in the course of a financial year, they nonetheless shall be held to pay the established contribution for the full year.</li>
+                                    <li>A participant that is a legal entity shall be represented with respect to the rights and duties associated with participantship by a representative appointed by said legal entity, on the understanding that this representative may not also be a board member of the foundation.</li>
+                                    <li>The board shall maintain a register of the names and addresses of all participants, including the category for payment of a fee to which the board has assigned them. Every participant has the duty to notify the board of their address in writing. If an electronic address is also specified with the objective to have this included in the register of participants, this furnishing automatically constitutes agreement to have all notices and announcements as well as convocations to meetings be sent electronically.</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <!-- Article 16 -->
+                    <div class="section-subsection">
+                        <h3 id="article16">
+                            <a href="#article16" class="hash">#</a>
+                            Article 16. Council of participants
+                        </h3>
+                        <ol class="article-list">
+                            <li>
+                                <ol>
+                                    <li>The participants are united in the council of participants.</li>
+                                    <li>The council of participants shall on request advise the board on issues that the board presents to the council of participants. The advice of the council of participants shall not be binding.</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <!-- Article 17 -->
+                    <div class="section-subsection">
+                        <h3 id="article17">
+                            <a href="#article17" class="hash">#</a>
+                            Article 17. Council of participants: organisation
+                        </h3>
+                        <ol class="article-list">
+                            <li>
+                                <ol>
+                                    <li>The council of participants shall be chaired by the chairperson of the board.</li>
+                                    <li>Meetings of the council of participants shall be held as frequently as the chairperson or at least two other board members convene a meeting of the council of participants. The council of participants shall meet at least once a year. The board shall be obliged to call a meeting of the council of participants if at least one tenth of the number participants request this of the board in writing, accompanied by a specific notice of the items of business to be dealt with. The requirement that this request be made in writing is satisfied if the statement is recorded electronically. If the board fails to call a meeting, in such way that the meeting can be held within two months after the request, the applicants themselves shall be authorised to call the meeting.</li>
+                                    <li>The convocation of the meetings of the council of participants shall take place in writing by the person(s) referred to in article 17.2, or on their behalf by the secretary of the board with a term of notice of at least fourteen days, specifying the items of business to be dealt with. If a participant agrees, he/she/it can be called to the meeting by a reproducible message transmitted electronically to an address that he or she has specified for this.</li>
+                                    <li>Meetings of the council of participants may be attended by participants, the board members and those persons invited by the chairperson or by two other board members jointly.</li>
+                                    <li>A participant may have themselves represented at the meeting by a fellow participant. A written authorisation must be given for this. The requirement that this authorisation be made in writing is satisfied if the statement is recorded electronically. The authorisation to represent does not have privative effect. A participant can only represent one other fellow participant at the meeting</li>
+                                    <li>The chairperson shall chair the meetings of the council of participants. In the absence of the chairperson, the meeting shall provide for its own chair. Until that time the chairpersonhood of the meeting shall be observed by the board member attending the meeting longest in office.</li>
+                                    <li>Minutes are taken of the business discussed in the meetings of the council of participants by the secretary or by the person appointed by the chairperson of the meeting.</li>
+                                    <li>Further rules on the functioning of the council of participants may be laid down in standing orders that shall be adopted by the council of participants after prior approval by the board.</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <!-- Article 18 -->
+                    <div class="section-subsection">
+                        <h3 id="article18">
+                            <a href="#article18" class="hash">#</a>
+                            Article 18. Council of participants: decision-making
+                        </h3>
+                        <ol class="article-list">
+                            <li>
+                                <ol>
+                                    <li>Every participant is entitled to cast one vote in the meeting of the council of participants.</li>
+                                    <li>Insofar as these articles of association do not stipulate a larger majority, all decisions of the council of participants are taken by an absolute majority of votes cast.</li>
+                                    <li>All resolutions of the council of participants may also be taken outside of the meeting, provided all participants are given the opportunity to cast their vote and they have all declared in writing not to oppose such manner of decision-making and the board members have been heard. A resolution is taken as soon as the required majority of all participants have declared to be in favour of the proposal in writing. In writing is also understood to include a message sent and reproducible by electronic means. The documents as referred to in the first sentence of this article shall be attached to the minutes of the meetings of the council of participants.</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <!-- Article 19 -->
+                    <div class="section-subsection">
+                        <h3 id="article19">
+                            <a href="#article19" class="hash">#</a>
+                            Article 19. Working groups and committees
+                        </h3>
+                        <ol class="article-list">
+                            <li>
+                                <ol>
+                                    <li>The board may decide to institute or disband working groups and committees. When instituting each working group or committee, the board shall formulate the remit for which the working group or committee is being set up.</li>
+                                    <li>Third parties, besides board members and/or participants may be appointed to the working groups and committees set up by the board. The board shall appoint and dismiss the participants of the working groups and committees instituted by it and shall determine the number of participants of each working group and committee.</li>
+                                    <li>All matters concerning working groups and committees will be governed by means of standing orders.</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <!-- Article 20 -->
+                    <div class="section-subsection">
+                        <h3 id="article20">
+                            <a href="#article20" class="hash">#</a>
+                            Article 20. Financial year and accounts
+                        </h3>
+                        <ol class="article-list">
+                            <li>
+                                <ol>
+                                    <li>The financial year of the foundation is the same as the calendar year.</li>
+                                    <li>
+                                        The board is under obligation to keep records of the financial condition of the foundation and of all matters relating to the foundation’s work in accordance with the requirements stemming from this work and to keep the appropriate books and records and other data carriers in such manner that the rights and obligations of the foundation can be known from these at any time.
+                                        <br>
+                                        <br>
+                                        The records of the foundation must also clearly demonstrate:
+                                        <ol type="a" class="article-sublist">
+                                            <li>the nature and extent of (any) expenses and attendance fees due to the individual board members;</li>
+                                            <li>the nature and extent of the costs incurred by the foundation for fund raising and the administration of the foundation, as well as the nature and extent of the other expenditure by the foundation;</li>
+                                            <li>the nature and extent of the income of the foundation;</li>
+                                            <li>the nature and extent of the foundation’s capital.</li>
+                                        </ol>
+                                    </li>
+                                    <li>The board is under obligation to annually, within six months of the financial year, to record and draw up the foundation’s balance sheet and statement of assets and liabilities. The board may, before adopting the balance sheet and statement of assets and liabilities, have these documents audited by a registered accountant or an accounting consultant in the meaning of Section 393 of Book 2 of the Dutch Civil Code. This expert will report their findings of their audit to the board and will present the outcome of their audit in statement on the faithfulness of the documents referred to in the previous sentence.</li>
+                                    <li>The board is under obligation to keep the books, documents and other data carriers referred to above during seven years.</li>
+                                    <li>The data recorded on a data carrier, excluding the balance sheet and statement of assets and liabilities, which are drawn up on paper, may be transferred to another data carrier and kept, if and insofar the transfer takes place with a correct and full representation of the data and that these data are available during the entire period of keeping and can be rendered readable within a reasonable time.</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <!-- Article 21 -->
+                    <div class="section-subsection">
+                        <h3 id="article21">
+                            <a href="#article21" class="hash">#</a>
+                            Article 21. Standing orders
+                        </h3>
+                        <ol class="article-list">
+                            <li>
+                                <ol>
+                                    <li>The board may adopt, amend or cancel standing orders in which further rules are given on the functioning of the foundation and its board.</li>
+                                    <li>The adoption, amendment and cancellation of standing orders shall be subject to the provisions of article 22.2 and article 22.4 by analogy.</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <!-- Article 22 -->
+                    <div class="section-subsection">
+                        <h3 id="article22">
+                            <a href="#article22" class="hash">#</a>
+                            Article 22. Amendments of the articles of association
+                        </h3>
+                        <ol class="article-list">
+                            <li>
+                                <ol>
+                                    <li>The board, under due observation of the provisions of this article, is authorised to amend the articles of association.</li>
+                                    <li>A board resolution to amend the articles of association requires a majority of two thirds of the votes cast in a meeting of the board in which at least two thirds of the board members are attending or represented. If the aforementioned quorum is not present in a meeting of the board in which a resolution to amendment of the articles of association has been tabled, a second meeting shall be convened, to be held no sooner than two and no later than four weeks after the first meeting, in which second meeting valid decisions can be taken by a majority of two thirds of the votes cast, provided in this meeting at least half of the board members are present or represented. Notice must be given in the convocation to the second meeting that and why a resolution to amend the articles of association can be taken in a meeting in which only half of the board members need to be present or represented. The provisions in article 9.4, second sentence, of these articles of association is not applicable to a resolution to amend the articles of association.</li>
+                                    <li>A resolution to amend the articles of association requires the approval of the council of participants, who cannot decide to do so other than by a majority of at least two thirds of votes cast.</li>
+                                    <li>The convocation to the meeting in which a motion to amend the articles of association will be tabled shall always specify this. Additionally, a copy of the motion, containing the literal text of the proposed amendment, is to be enclosed with the convocation. In this case, the convocation must be sent at least two weeks in advance.</li>
+                                    <li>An amendment of the articles of association only comes into force after a notarial deed has been drawn up thereof. Every board member is authorised to have such deed executed.</li>
+                                    <li>The board members are under obligation to file an authentic copy of the amendment and the amended articles of association at the offices of the commercial register.</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <!-- Article 23 -->
+                    <div class="section-subsection">
+                        <h3 id="article23">
+                            <a href="#article23" class="hash">#</a>
+                            Article 23. Dissolution and liquidation
+                        </h3>
+                        <ol class="article-list">
+                            <li>
+                                <ol>
+                                    <li>The board is authorised to dissolve the foundation.</li>
+                                    <li>The board’s resolution to dissolve the foundation shall be subject to the provisions of article 22.2 and article 22.4.</li>
+                                    <li>After the dissolution of the foundation, the board shall liquidate the foundation, unless the court or the resolution to dissolve has appointed one or more other liquidators.</li>
+                                    <li>The liquidators shall notify the commercial register of the dissolution, as well as the fact that they are acting in such capacity and provide the personal details as a board member is required to.</li>
+                                    <li>
+                                        The board shall determine the destination of any liquidation surplus in the resolution to dissolve. The destination shall be in accordance with the foundation’s objective to the greatestpossible extent, on the understanding that the surplus will be deployed for:
+                                        <ol type="a" class="article-sublist">
+                                            <li>an institution serving the public good as referred to in Section 5 (b) of the General law relating to national taxes (Algemene Wet inzake rijksbelastingen) or a superseding provision with an similar object, or</li>
+                                            <li>a foreign institution that exclusively or virtually exclusively pursues the public good and has a similar object.</li>
+                                        </ol>
+                                        In the resolution to dissolve the board shall also appoint a custodian to keep the books, documents and other data carriers of the dissolved foundation.
+                                    </li>
+                                    <li>After dissolution the foundation shall continue to exist insofar as this is required for the liquidation of its capital. During liquidation the provisions of these articles of association will remain in force to the greatest possible extent. Documents and notices sent by the foundation must specify the words “under liquidation” after the foundation’s name.</li>
+                                    <li>At the end of the liquidation the books, documents and other data carriers of the dissolved foundation will be kept by the custodian appointed by the board in its resolution to dissolve for a period of seven years after the foundation has ceased to exist. This person is under obligation to within eight days after their duties as custodian commence to file their instructions and nameand address at the commercial register.</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <!-- Article 24 -->
+                    <div class="section-subsection">
+                        <h3 id="article24">
+                            <a href="#article24" class="hash">#</a>
+                            Article 24. Final provision
+                        </h3>
+                        <ol class="article-list">
+                            <li>
+                                <ol>
+                                    <li>The foundation’s first financial year will end on the last day of the calendar year following the calendar year in which the foundation is incorporated.</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <!-- Final declaration -->
+                    <div class="section-subsection">
+                        <h3 id="final-declaration">
+                            <a href="#final-declaration" class="hash">#</a>
+                            Final declaration
+                        </h3>
+                        <p>Finally, the following statement was made:</p>
+                        <p>The number of Trustees is determined at five.</p>
+                        <p>The following persons have been appointed as Trustees to the positions stated after their names:</p>
+                        <ol style="list-style-position: inside; margin-left: 1em;">
+                            <li>mr V.W.J. van Gerven, chair;</li>
+                            <li>mrs J.T.L. Adema, secretary;</li>
+                            <li>mr J. McHardy, treasurer;</li>
+                            <li>mrs A. Tosi, general trustee,</li>
+                            <li>mr. A.R.K. Kirchner, general trustee.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End of Constitution-->
+
+    </main>
+    <!--End Main Content Area-->
+
+
+    <!--Footer-->
+    <footer id="landing-footer" class="clearfix">
+        <div class="row clearfix">
+
+            <p id="copyright" class="col-2">ScholarLed</p>
+
+            <!--Social Icons in Footer-->
+            <ul class="col-2 social-icons">
+                <li>
+                    <a target="_blank" title="Email" href="mailto:info@scholarled.org">
+                        <i class="fa fa-envelope fa-1x"></i><span>Email</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" title="Facebook" href="https://www.facebook.com/ScholarLed/">
+                        <i class="fa fa-facebook fa-1x"></i><span>Facebook</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" title="Twitter" href="http://www.twitter.com/scholarled">
+                        <i class="fa fa-twitter fa-1x"></i><span>Twitter</span>
+                    </a>
+                </li>
+            </ul>
+            <!--End of Social Icons in Footer-->
+        </div>
+    </footer>
+    <!--End of Footer-->
+
+</div>
+
+<!-- Include JavaScript resources -->
+<script src="js/jquery.1.8.3.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/featherlight.min.js"></script>
+<script src="js/featherlight.gallery.min.js"></script>
+<script src="js/jquery.enllax.min.js"></script>
+<script src="js/jquery.scrollUp.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/jquery.stickyNavbar.min.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/images-loaded.min.js"></script>
+<script src="js/lightbox.min.js"></script>
+<script src="js/site.js"></script>
+
+</body>
+</html>
