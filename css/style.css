@@ -188,6 +188,10 @@ section {
     overflow: hidden;
 }
 
+section div:not(.section-heading) {
+    text-align: justify;
+}
+
 h3:target {
     padding-top: 90px;
     margin-top: -90px;
@@ -776,6 +780,7 @@ h6 {
 
 .section-heading {
     padding: 0 0 15px 0;
+    text-align: left;
 }
 
 .section-subtitle {
