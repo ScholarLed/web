@@ -66,19 +66,25 @@
         ol.article-list {
             counter-reset: item
         }
-        ol.article-list ol {
+        ol.article-list ol:not(.article-sublist) {
             counter-reset: item
         }
-        .article-list li {
+        .article-list li:not(ol.article-sublist li) {
             display: block
         }
-        .article-list li:before {
+        .article-list li:not(ol.article-sublist li):before {
             content: counters(item, ".") " ";
             counter-increment: item;
         }
-        .article-list > li:first-child:before {
+        .article-list > li:not(ol.article-sublist li):first-child:before {
             counter-increment: item;
             content: "";
+        }
+        ol.article-sublist {
+            list-style-position: inside;
+        }
+        ol.article-sublist li {
+            margin-left: 3.4em;
         }
     </style>
 
@@ -321,8 +327,21 @@
                         <ol class="article-list">
                             <li>
                                 <ol>
-                                    <li>The foundation bears the name: <b>Stichting ScholarLed</b>.</li>
-                                    <li>It has its registered office in the municipality of The Hague.</li>
+                                    <li>The object of the foundation is to facilitate, support, and represent scholar-led, fully Open-
+                                        Access (OA) book publishers in all scholarly disciplines.</li>
+                                    <li>
+                                        This objective will be pursued by, inter alia:
+                                        <ol type="a" class="article-sublist">
+                                            <li>inventing and implementing powerful, practical ways for scholar-led Open Access presses to grow and flourish in a rapidly changing publishing landscape;</li>
+                                            <li>developing and experimenting with knowledges, infrastructures, practices, and forms of governance that allow presses to provide each other with mutual support;</li>
+                                            <li>opening up scholarly research to diverse authorships and readerships;</li>
+                                            <li>resisting the monopolisation of academic knowledge and Open Access content production and distribution;</li>
+                                            <li>working collaboratively and openly, rather than in competition, while being accommodating and respectful of our differences;</li>
+                                            <li>promoting and showcasing the output and activities of its participants.</li>
+
+                                        </ol>
+                                    </li>
+                                    <li>The foundation does not intend to make a profit with the totality of its activities that are aimed at realising or promoting its object.</li>
                                 </ol>
                             </li>
                         </ol>
@@ -337,8 +356,7 @@
                         <ol class="article-list">
                             <li>
                                 <ol>
-                                    <li>The foundation bears the name: <b>Stichting ScholarLed</b>.</li>
-                                    <li>It has its registered office in the municipality of The Hague.</li>
+                                    <li></li>
                                 </ol>
                             </li>
                         </ol>
@@ -353,8 +371,7 @@
                         <ol class="article-list">
                             <li>
                                 <ol>
-                                    <li>The foundation bears the name: <b>Stichting ScholarLed</b>.</li>
-                                    <li>It has its registered office in the municipality of The Hague.</li>
+                                    <li></li>
                                 </ol>
                             </li>
                         </ol>
@@ -369,8 +386,7 @@
                         <ol class="article-list">
                             <li>
                                 <ol>
-                                    <li>The foundation bears the name: <b>Stichting ScholarLed</b>.</li>
-                                    <li>It has its registered office in the municipality of The Hague.</li>
+                                    <li></li>
                                 </ol>
                             </li>
                         </ol>
@@ -385,8 +401,7 @@
                         <ol class="article-list">
                             <li>
                                 <ol>
-                                    <li>The foundation bears the name: <b>Stichting ScholarLed</b>.</li>
-                                    <li>It has its registered office in the municipality of The Hague.</li>
+                                    <li></li>
                                 </ol>
                             </li>
                         </ol>
@@ -401,8 +416,7 @@
                         <ol class="article-list">
                             <li>
                                 <ol>
-                                    <li>The foundation bears the name: <b>Stichting ScholarLed</b>.</li>
-                                    <li>It has its registered office in the municipality of The Hague.</li>
+                                    <li></li>
                                 </ol>
                             </li>
                         </ol>
@@ -417,8 +431,7 @@
                         <ol class="article-list">
                             <li>
                                 <ol>
-                                    <li>The foundation bears the name: <b>Stichting ScholarLed</b>.</li>
-                                    <li>It has its registered office in the municipality of The Hague.</li>
+                                    <li></li>
                                 </ol>
                             </li>
                         </ol>
@@ -433,8 +446,7 @@
                         <ol class="article-list">
                             <li>
                                 <ol>
-                                    <li>The foundation bears the name: <b>Stichting ScholarLed</b>.</li>
-                                    <li>It has its registered office in the municipality of The Hague.</li>
+                                    <li></li>
                                 </ol>
                             </li>
                         </ol>
@@ -449,8 +461,7 @@
                         <ol class="article-list">
                             <li>
                                 <ol>
-                                    <li>The foundation bears the name: <b>Stichting ScholarLed</b>.</li>
-                                    <li>It has its registered office in the municipality of The Hague.</li>
+                                    <li></li>
                                 </ol>
                             </li>
                         </ol>
@@ -465,8 +476,7 @@
                         <ol class="article-list">
                             <li>
                                 <ol>
-                                    <li>The foundation bears the name: <b>Stichting ScholarLed</b>.</li>
-                                    <li>It has its registered office in the municipality of The Hague.</li>
+                                    <li></li>
                                 </ol>
                             </li>
                         </ol>
@@ -481,8 +491,7 @@
                         <ol class="article-list">
                             <li>
                                 <ol>
-                                    <li>The foundation bears the name: <b>Stichting ScholarLed</b>.</li>
-                                    <li>It has its registered office in the municipality of The Hague.</li>
+                                    <li></li>
                                 </ol>
                             </li>
                         </ol>
@@ -497,8 +506,7 @@
                         <ol class="article-list">
                             <li>
                                 <ol>
-                                    <li>The foundation bears the name: <b>Stichting ScholarLed</b>.</li>
-                                    <li>It has its registered office in the municipality of The Hague.</li>
+                                    <li></li>
                                 </ol>
                             </li>
                         </ol>
@@ -513,8 +521,7 @@
                         <ol class="article-list">
                             <li>
                                 <ol>
-                                    <li>The foundation bears the name: <b>Stichting ScholarLed</b>.</li>
-                                    <li>It has its registered office in the municipality of The Hague.</li>
+                                    <li></li>
                                 </ol>
                             </li>
                         </ol>
@@ -529,8 +536,7 @@
                         <ol class="article-list">
                             <li>
                                 <ol>
-                                    <li>The foundation bears the name: <b>Stichting ScholarLed</b>.</li>
-                                    <li>It has its registered office in the municipality of The Hague.</li>
+                                    <li></li>
                                 </ol>
                             </li>
                         </ol>
@@ -545,8 +551,7 @@
                         <ol class="article-list">
                             <li>
                                 <ol>
-                                    <li>The foundation bears the name: <b>Stichting ScholarLed</b>.</li>
-                                    <li>It has its registered office in the municipality of The Hague.</li>
+                                    <li></li>
                                 </ol>
                             </li>
                         </ol>
@@ -561,8 +566,7 @@
                         <ol class="article-list">
                             <li>
                                 <ol>
-                                    <li>The foundation bears the name: <b>Stichting ScholarLed</b>.</li>
-                                    <li>It has its registered office in the municipality of The Hague.</li>
+                                    <li></li>
                                 </ol>
                             </li>
                         </ol>
@@ -577,8 +581,7 @@
                         <ol class="article-list">
                             <li>
                                 <ol>
-                                    <li>The foundation bears the name: <b>Stichting ScholarLed</b>.</li>
-                                    <li>It has its registered office in the municipality of The Hague.</li>
+                                    <li></li>
                                 </ol>
                             </li>
                         </ol>
@@ -593,8 +596,7 @@
                         <ol class="article-list">
                             <li>
                                 <ol>
-                                    <li>The foundation bears the name: <b>Stichting ScholarLed</b>.</li>
-                                    <li>It has its registered office in the municipality of The Hague.</li>
+                                    <li></li>
                                 </ol>
                             </li>
                         </ol>
@@ -609,8 +611,7 @@
                         <ol class="article-list">
                             <li>
                                 <ol>
-                                    <li>The foundation bears the name: <b>Stichting ScholarLed</b>.</li>
-                                    <li>It has its registered office in the municipality of The Hague.</li>
+                                    <li></li>
                                 </ol>
                             </li>
                         </ol>
@@ -625,8 +626,7 @@
                         <ol class="article-list">
                             <li>
                                 <ol>
-                                    <li>The foundation bears the name: <b>Stichting ScholarLed</b>.</li>
-                                    <li>It has its registered office in the municipality of The Hague.</li>
+                                    <li></li>
                                 </ol>
                             </li>
                         </ol>
@@ -641,8 +641,7 @@
                         <ol class="article-list">
                             <li>
                                 <ol>
-                                    <li>The foundation bears the name: <b>Stichting ScholarLed</b>.</li>
-                                    <li>It has its registered office in the municipality of The Hague.</li>
+                                    <li></li>
                                 </ol>
                             </li>
                         </ol>
@@ -657,8 +656,7 @@
                         <ol class="article-list">
                             <li>
                                 <ol>
-                                    <li>The foundation bears the name: <b>Stichting ScholarLed</b>.</li>
-                                    <li>It has its registered office in the municipality of The Hague.</li>
+                                    <li></li>
                                 </ol>
                             </li>
                         </ol>
@@ -673,8 +671,7 @@
                         <ol class="article-list">
                             <li>
                                 <ol>
-                                    <li>The foundation bears the name: <b>Stichting ScholarLed</b>.</li>
-                                    <li>It has its registered office in the municipality of The Hague.</li>
+                                    <li></li>
                                 </ol>
                             </li>
                         </ol>
