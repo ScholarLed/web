@@ -67,7 +67,7 @@ a:hover, #header.nav-solid nav a:hover {
 
 /* Navigation Active State */
 
-#header.nav-solid .active {
+#header.nav-solid .active, #header.nav-solid .active-important {
     color: #d2b356;
     border-color: #d2b356;
 }    
